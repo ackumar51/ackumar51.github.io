@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Georgia, serif;
-      max-width: 950px;
+      max-width: 1100px;
       margin: 40px auto;
       color: #333;
       line-height: 1.5;
@@ -16,11 +16,11 @@
     }
 
     #left {
-      width: 30%;
+      width: 28%;
     }
 
     #right {
-      width: 70%;
+      width: 72%;
     }
 
     h1 {
@@ -35,6 +35,14 @@
       border-bottom: 1px solid #ddd;
       padding-bottom: 5px;
       margin-top: 0;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      margin-top: 35px;
+      margin-bottom: 10px;
+      color: #444;
     }
 
     a {
@@ -53,18 +61,19 @@
     }
 
     .contact-info li {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
 
     p {
       margin-top: 15px;
+      margin-bottom: 20px;
     }
 
     .badge-gallery {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      margin-top: 25px;
+      margin-top: 15px;
       align-items: flex-start;
     }
 
@@ -79,6 +88,12 @@
       margin-top: 10px;
       text-align: center;
       font-size: 0.95em;
+      line-height: 1.35;
+    }
+
+    .credly-embed {
+      width: 150px;
+      min-height: 270px;
     }
   </style>
 </head>
@@ -101,22 +116,39 @@
 
     <p>
       A collection of my verifiable industry credentials in cloud architecture,
-      cybersecurity, networking, and systems infrastructure.
+      artificial intelligence, cybersecurity, networking, and IT infrastructure.
     </p>
 
+    <h3>AWS Certifications</h3>
     <div class="badge-gallery">
       <div class="badge-card">
         <div
+          class="credly-embed"
           data-iframe-width="150"
           data-iframe-height="270"
           data-share-badge-id="8272e643-bb7e-42ec-b36f-753a081b35a7"
           data-share-badge-host="https://www.credly.com">
         </div>
-        <div class="badge-label">AWS Certified Solutions Architect</div>
+        <div class="badge-label">AWS Certified Solutions Architect – Associate</div>
       </div>
 
       <div class="badge-card">
         <div
+          class="credly-embed"
+          data-iframe-width="150"
+          data-iframe-height="270"
+          data-share-badge-id="f76239c5-a90e-460c-9d42-906bb0a6e12f"
+          data-share-badge-host="https://www.credly.com">
+        </div>
+        <div class="badge-label">AWS Certified AI Practitioner</div>
+      </div>
+    </div>
+
+    <h3>CompTIA Certifications</h3>
+    <div class="badge-gallery">
+      <div class="badge-card">
+        <div
+          class="credly-embed"
           data-iframe-width="150"
           data-iframe-height="270"
           data-share-badge-id="19d3b743-fe07-492a-801c-243ee365d7d9"
@@ -124,14 +156,31 @@
         </div>
         <div class="badge-label">CompTIA Security+</div>
       </div>
+
+      <div class="badge-card">
+        <div
+          class="credly-embed"
+          data-iframe-width="150"
+          data-iframe-height="270"
+          data-share-badge-id="e5f759ba-e173-4674-8267-a0e59810ca76"
+          data-share-badge-host="https://www.credly.com">
+        </div>
+        <div class="badge-label">CompTIA Network+</div>
+      </div>
+
+      <div class="badge-card">
+        <div
+          class="credly-embed"
+          data-iframe-width="150"
+          data-iframe-height="270"
+          data-share-badge-id="2d915d22-c147-4598-a402-c49c37e4528c"
+          data-share-badge-host="https://www.credly.com">
+        </div>
+        <div class="badge-label">CompTIA A+</div>
+      </div>
     </div>
   </div>
 
-  <script
-    type="text/javascript"
-    async
-    src="https://cdn.credly.com/assets/utilities/embed.js">
-  </script>
-
+  <script async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
 </body>
 </html>
