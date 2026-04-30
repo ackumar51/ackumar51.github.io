@@ -5,6 +5,7 @@
   <title>Ashish Kumar | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    /* Stripe-inspired Design System */
     :root {
       --primary-color: #635BFF;
       --primary-hover: #0A2540;
@@ -52,7 +53,10 @@
       background: radial-gradient(circle, rgba(99,91,255,0.08) 0%, rgba(255,255,255,0) 70%); z-index: 0;
     }
     .hero-content { max-width: 800px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+    
+    /* Using clamp so it stays on one line and scales perfectly on all screens */
     .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px; margin-bottom: 20px; }
+    
     .hero p { font-size: 1.2rem; max-width: 650px; margin: 0 auto 30px; color: var(--text-body); }
 
     .btn { display: inline-block; padding: 10px 20px; border-radius: 30px; font-weight: 600; font-size: 0.95rem; transition: all 0.2s ease; cursor: pointer; border: none; }
@@ -78,8 +82,7 @@
     .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
     .card-header-text { flex-grow: 1; padding-right: 15px;}
     .company-logo { width: 50px; height: 50px; object-fit: contain; border-radius: 8px; flex-shrink: 0; }
-    /* Increased max-width and height slightly so UMIACS/IBM pop more */
-    .company-logo-wide { width: auto; height: 80px; max-width: 250px; object-fit: contain; flex-shrink: 0; }
+    .company-logo-wide { width: auto; height: 40px; max-width: 150px; object-fit: contain; flex-shrink: 0; }
     
     .role-date { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 15px; display: block; }
     
@@ -91,7 +94,6 @@
     .tag.primary { background: rgba(99,91,255,0.1); color: var(--primary-color); }
 
     @media (max-width: 900px) {
-      .hero h1 { font-size: 2.5rem; }
       .card-full, .card-wide, .card-half, .card-third { grid-column: span 12; }
       nav { flex-direction: column; gap: 15px; }
     }
@@ -105,11 +107,12 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="certifications.html">Certifications</a>
+      <a href="https://www.linkedin.com/in/ackumar/" target="_blank">LinkedIn</a>
       <a href="https://github.com/ackumar51" target="_blank">GitHub</a>
     </div>
   </nav>
 
-<header class="hero">
+  <header class="hero">
     <div class="hero-content">
       <h1>Computer Science & Mathematics</h1>
       <p>
