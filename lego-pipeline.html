@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Databricks Lakehouse Pipeline | Ashish Kumar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Shared CSS matching the homepage */
+    :root {
+      --primary-color: #635BFF;
+      --primary-hover: #0A2540;
+      --text-dark: #0A2540;
+      --text-body: #425466;
+      --bg-light: #F6F9FC;
+      --white: #FFFFFF;
+      --border-radius-lg: 16px;
+      --shadow-sm: 0 2px 5px rgba(50, 50, 93, 0.1), 0 1px 1px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+    }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text-body); background-color: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3 { color: var(--text-dark); margin: 0 0 15px 0; line-height: 1.2; }
+    a { color: var(--primary-color); text-decoration: none; font-weight: 600; transition: color 0.2s ease; }
+    a:hover { color: var(--primary-hover); }
+
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; max-width: 1100px; margin: 0 auto; }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; }
+    .nav-links a { margin-left: 25px; color: var(--text-body); font-size: 0.95rem; font-weight: 500; }
+    .nav-links a:hover { color: var(--primary-color); }
+
+    .hero { padding: 60px 20px 60px; background: var(--bg-light); text-align: center; }
+    .hero h1 { font-size: 2.8rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 10px; }
+    .hero p { font-size: 1.1rem; max-width: 600px; margin: 0 auto; color: var(--text-body); }
+
+    .section-container { max-width: 900px; margin: -30px auto 100px; padding: 0 20px; position: relative; z-index: 2; }
+    .card { background: var(--white); border-radius: var(--border-radius-lg); padding: 40px; box-shadow: var(--shadow-lg); border: 1px solid rgba(0,0,0,0.04); display: flex; flex-direction: column; align-items: center;}
+    
+    .project-image { width: 100%; max-width: 700px; height: auto; border-radius: 8px; box-shadow: var(--shadow-sm); margin-bottom: 30px; }
+    
+    .text-container { max-width: 700px; width: 100%; }
+    .tools-container { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 20px; padding: 15px; background: var(--bg-light); border-radius: 8px; width: fit-content;}
+    
+    .tag { display: inline-block; background: #E3E8EE; color: var(--text-dark); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+
+    @media (max-width: 900px) { nav { flex-direction: column; gap: 15px; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Ashish Kumar</div>
+    <div class="nav-links">
+      <a href="index.html">&larr; Back to Home</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="https://github.com/ackumar51" target="_blank">GitHub</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Automated Lakehouse Pipeline</h1>
+    <p>Data Engineering & Machine Learning Architecture</p>
+  </header>
+
+  <main class="section-container">
+    <div class="card">
+      
+      <img class="project-image" src="https://obj.umiacs.umd.edu/ackumar/lego-pipeline-architecture-databricks.png" alt="LEGO Pipeline Architecture Diagram">
+
+      <div class="text-container">
+        <h3>About the Architecture</h3>
+        <p>
+          This project is a scalable, end-to-end data engineering pipeline built on the Databricks Lakehouse platform. It programmatically ingests raw dataset variants into a <strong>Bronze</strong> layer, performs data cleansing and schema enforcement using PySpark in the <strong>Silver</strong> layer, and outputs aggregated business intelligence assets in the <strong>Gold</strong> layer.
+        </p>
+        <p>
+          To enhance the platform's analytical capabilities, I engineered three original scoring metrics and integrated a machine learning layer utilizing KMeans clustering (StandardScaler, k=4) to segment collector archetypes. These clusters are directly integrated with Databricks Genie AI to serve end-users with natural language, cluster-based product recommendations.
+        </p>
+
+        <div class="tools-container">
+          <strong style="margin-right: 5px;">Tech Stack:</strong>
+          <span class="tag">Databricks</span>
+          <span class="tag">PySpark</span>
+          <span class="tag">Python</span>
+          <span class="tag">Delta Lake</span>
+          <span class="tag">SQL</span>
+          <span class="tag">KMeans Clustering</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
