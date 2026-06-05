@@ -41,6 +41,11 @@
     
     .tag { display: inline-block; background: #E3E8EE; color: var(--text-dark); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
 
+    /* Button Styles from Homepage */
+    .btn { display: inline-block; padding: 10px 20px; border-radius: 30px; font-weight: 600; font-size: 0.95rem; transition: all 0.2s ease; cursor: pointer; border: none; }
+    .btn-primary { background-color: var(--primary-color); color: var(--white); box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
+    .btn-primary:hover { background-color: var(--primary-hover); color: var(--white); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+
     @media (max-width: 900px) { nav { flex-direction: column; gap: 15px; } }
   </style>
 </head>
@@ -68,20 +73,23 @@
       <div class="text-container">
         <h3>About the Architecture</h3>
         <p>
-          This project is a scalable, end-to-end data engineering pipeline built on the Databricks Lakehouse platform. It programmatically ingests raw dataset variants into a <strong>Bronze</strong> layer, performs data cleansing and schema enforcement using PySpark in the <strong>Silver</strong> layer, and outputs aggregated business intelligence assets in the <strong>Gold</strong> layer.
+          This project is a scalable, end-to-end data engineering pipeline built on the <strong>Databricks Lakehouse Platform</strong>. It programmatically ingests raw dataset variants into a <strong>Bronze</strong> layer, performs data cleansing and schema enforcement using PySpark and Delta Lake in the <strong>Silver</strong> layer, and outputs aggregated business intelligence assets in the <strong>Gold</strong> layer.
         </p>
         <p>
-          To enhance the platform's analytical capabilities, I engineered three original scoring metrics and integrated a machine learning layer utilizing KMeans clustering (StandardScaler, k=4) to segment collector archetypes. These clusters are directly integrated with Databricks Genie AI to serve end-users with natural language, cluster-based product recommendations.
+          To enhance the platform's analytical capabilities, I engineered three original scoring metrics and integrated a machine learning layer utilizing <strong>Spark MLlib</strong> (KMeans clustering, StandardScaler) to segment collector archetypes. These clusters are directly integrated with <strong>Databricks AI/BI</strong> to serve end-users with natural language, cluster-based product recommendations.
         </p>
 
         <div class="tools-container">
           <strong style="margin-right: 5px;">Tech Stack:</strong>
-          <span class="tag">Databricks</span>
+          <span class="tag">Databricks Lakehouse</span>
+          <span class="tag">Spark MLlib</span>
           <span class="tag">PySpark</span>
-          <span class="tag">Python</span>
           <span class="tag">Delta Lake</span>
-          <span class="tag">SQL</span>
-          <span class="tag">KMeans Clustering</span>
+          <span class="tag">Databricks AI/BI</span>
+        </div>
+
+        <div style="margin-top: 35px;">
+          <a href="https://github.com/ackumar51/lego-collector-value-engine" target="_blank" class="btn btn-primary">View Project on GitHub &rarr;</a>
         </div>
       </div>
 
