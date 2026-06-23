@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Ashish Kumar | Portfolio</title>
@@ -27,11 +28,29 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    h1, h2, h3, h4 { color: var(--text-dark); margin: 0 0 10px 0; line-height: 1.2; }
-    h3 { font-size: 1.3rem; }
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--text-dark);
+      margin: 0 0 10px 0;
+      line-height: 1.2;
+    }
 
-    a { color: var(--primary-color); text-decoration: none; font-weight: 600; transition: color 0.2s ease; }
-    a:hover { color: var(--primary-hover); }
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--primary-hover);
+    }
 
     nav {
       display: flex;
@@ -43,16 +62,32 @@
       position: relative;
       z-index: 10;
     }
-    .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--text-dark); letter-spacing: -0.5px; }
-    .nav-links a { margin-left: 25px; color: var(--text-body); font-size: 0.95rem; font-weight: 500; }
-    .nav-links a:hover { color: var(--primary-color); }
+
+    .nav-logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links a {
+      margin-left: 25px;
+      color: var(--text-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-color);
+    }
 
     .hero {
       position: relative;
       padding: 80px 20px 100px;
       overflow: hidden;
-      background: linear-gradient(104.2deg, rgba(255,255,255,1) 0%, rgba(246,249,252,1) 100%);
+      background: linear-gradient(104.2deg, rgba(255, 255, 255, 1) 0%, rgba(246, 249, 252, 1) 100%);
     }
+
     .hero::before {
       content: '';
       position: absolute;
@@ -60,26 +95,87 @@
       right: -100px;
       width: 600px;
       height: 600px;
-      background: radial-gradient(circle, rgba(99,91,255,0.08) 0%, rgba(255,255,255,0) 70%);
+      background: radial-gradient(circle, rgba(99, 91, 255, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
       z-index: 0;
     }
 
-    .hero-content { max-width: 800px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
 
-    .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; letter-spacing: -1.5px; margin-bottom: 20px; }
-    .hero p { font-size: 1.2rem; max-width: 650px; margin: 0 auto 30px; color: var(--text-body); }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+    }
 
-    .btn { display: inline-block; padding: 10px 20px; border-radius: 30px; font-weight: 600; font-size: 0.95rem; transition: all 0.2s ease; cursor: pointer; border: none; }
-    .btn-primary { background-color: var(--primary-color); color: var(--white); box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); }
-    .btn-primary:hover { background-color: var(--primary-hover); color: var(--white); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
-    .btn-secondary { background-color: transparent; color: var(--text-dark); margin-left: 15px; }
-    .btn-secondary:hover { color: var(--primary-color); }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: var(--text-body);
+    }
 
-    .section-container { max-width: 1100px; margin: -40px auto 100px; padding: 0 20px; position: relative; z-index: 2; }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
 
-    .section-title { font-size: 1.5rem; border-bottom: 2px solid #e3e8ee; padding-bottom: 10px; margin: 50px 0 25px; color: var(--text-dark); }
+    .btn-primary {
+      background-color: var(--primary-color);
+      color: var(--white);
+      box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
 
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 30px; }
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+      color: var(--white);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--text-dark);
+      margin-left: 15px;
+    }
+
+    .btn-secondary:hover {
+      color: var(--primary-color);
+    }
+
+    .section-container {
+      max-width: 1100px;
+      margin: -40px auto 100px;
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      border-bottom: 2px solid #e3e8ee;
+      padding-bottom: 10px;
+      margin: 50px 0 25px;
+      color: var(--text-dark);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 30px;
+    }
 
     .card {
       background: var(--white);
@@ -87,29 +183,83 @@
       padding: 35px;
       box-shadow: var(--shadow-sm);
       transition: all 0.3s ease;
-      border: 1px solid rgba(0,0,0,0.04);
+      border: 1px solid rgba(0, 0, 0, 0.04);
       display: flex;
       flex-direction: column;
     }
-    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 
-    .card-full  { grid-column: span 12; }
-    .card-wide  { grid-column: span 8; }
-    .card-half  { grid-column: span 6; }
-    .card-third { grid-column: span 4; }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
 
-    .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
+    .card-full {
+      grid-column: span 12;
+    }
 
-    .card-header-text { flex-grow: 1; padding-right: 15px; }
+    .card-wide {
+      grid-column: span 8;
+    }
 
-    .role-date { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 15px; display: block; }
+    .card-half {
+      grid-column: span 6;
+    }
 
-    .experience-list { padding-left: 20px; margin: 0; font-size: 0.95rem; }
-    .experience-list li { margin-bottom: 10px; }
-    .card-third .experience-list { font-size: 0.9rem; }
+    .card-third {
+      grid-column: span 4;
+    }
 
-    .tag { display: inline-block; background: #E3E8EE; color: var(--text-dark); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; margin: 0 5px 10px 0; }
-    .tag.primary { background: rgba(99,91,255,0.1); color: var(--primary-color); }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+
+    .card-header-text {
+      flex-grow: 1;
+      padding-right: 15px;
+    }
+
+    .role-date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .experience-list {
+      padding-left: 20px;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .experience-list li {
+      margin-bottom: 10px;
+    }
+
+    .card-third .experience-list {
+      font-size: 0.9rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #E3E8EE;
+      color: var(--text-dark);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin: 0 5px 10px 0;
+    }
+
+    .tag.primary {
+      background: rgba(99, 91, 255, 0.1);
+      color: var(--primary-color);
+    }
 
     .logo-sapns2 {
       width: auto;
@@ -152,13 +302,25 @@
     }
 
     @media (max-width: 900px) {
-      .hero h1 { font-size: 2.5rem; }
-      .card-full, .card-wide, .card-half, .card-third { grid-column: span 12; }
-      nav { flex-direction: column; gap: 15px; }
-    }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
 
+      .card-full,
+      .card-wide,
+      .card-half,
+      .card-third {
+        grid-column: span 12;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <nav>
@@ -175,14 +337,15 @@
     <div class="hero-content">
       <h1>Computer Science & Mathematics</h1>
       <p>
-        I am a junior at the University of Maryland, College Park, specializing in
+        I am a student at the University of Maryland, College Park, specializing in
         high-performance computing (HPC), cloud architecture, and backend systems development.
       </p>
       <div style="margin-top: 30px;">
         <p style="font-weight: 600; color: var(--text-dark); margin-bottom: 20px;">
           Contact: <a href="mailto:ackumar@umd.edu" style="color: var(--primary-color);">ackumar@umd.edu</a>
         </p>
-        <a href="https://github.com/ackumar51" target="_blank" class="btn btn-secondary" style="margin-left: 0; border: 2px solid #e3e8ee;">View GitHub &rarr;</a>
+        <a href="https://github.com/ackumar51" target="_blank" class="btn btn-secondary"
+          style="margin-left: 0; border: 2px solid #e3e8ee;">View GitHub &rarr;</a>
       </div>
     </div>
   </header>
@@ -200,7 +363,8 @@
             <p style="color: var(--text-dark); font-weight: 600; margin: -5px 0 5px 0;">SAP NS2</p>
             <span class="role-date">Summer 2026</span>
           </div>
-          <img src="https://sapns2.com/wp-content/uploads/2025/02/SAPNS2_BLACK_Logo-min.png" alt="SAP NS2 Logo" class="logo-sapns2">
+          <img src="https://sapns2.com/wp-content/uploads/2025/02/SAPNS2_BLACK_Logo-min.png" alt="SAP NS2 Logo"
+            class="logo-sapns2">
         </div>
         <p style="margin-top: 0;">
           Preparing to join the Cloud Application Services (CAS) team, focusing on secure,
@@ -236,17 +400,28 @@
         <div class="card-header">
           <div class="card-header-text">
             <h3>System Administrator, HPC Specialization</h3>
-            <p style="color: var(--primary-color); font-weight: 600; margin: -5px 0 5px 0;">University of Maryland Institute for Advanced Computer Studies</p>
+            <p style="color: var(--primary-color); font-weight: 600; margin: -5px 0 5px 0;">University of Maryland
+              Institute for Advanced Computer Studies</p>
             <span class="role-date">September 2024 - May 2026</span>
           </div>
-          <img src="https://www.umiacs.umd.edu/sites/default/files/UMIACS_combination_mark.png" alt="UMIACS Logo" class="logo-umiacs">
+          <img src="https://www.umiacs.umd.edu/sites/default/files/UMIACS_combination_mark.png" alt="UMIACS Logo"
+            class="logo-umiacs">
         </div>
         <ul class="experience-list">
-          <li>Deployed a Slurm Web dashboard using JWT-Authentication and REST APIs to provide job transparency into a 1,200+ GPU HPC cluster, allowing 200+ student and faculty researchers to monitor and analyze a queue of 200-400+ concurrent jobs.</li>
-          <li>Accelerated AI/ML research for 200+ students and faculty by racking, deploying, and managing $175K+ in high-performance computing servers equipped with NVIDIA L40S, RTX A5000, and RTX 2080 GPUs on the institute's Slurm HPC Cluster.</li>
-          <li>Strengthened endpoint security and device management by onboarding 10+ conference room PCs into Microsoft Intune, delivering daily updates that prevent up to 98% of malicious attacks, reduce vulnerability exposure, and enforce policy compliance for 100+ monthly users.</li>
-          <li>Reduced print job failures by 40% and improved processing speed by 50% by deploying a RHEL9 CUPS Print Server on VMware for the computer science building, optimizing system performance.</li>
-          <li>Utilized Linux and Windows system administration technologies to manage networks, and provide helpdesk support, enhancing system reliability and reducing downtime across an institute with 80+ faculty, 1,200+ computers, and 6,000+ port network.</li>
+          <li>Deployed a Slurm Web dashboard using JWT-Authentication and REST APIs to provide job transparency into a
+            1,200+ GPU HPC cluster, allowing 200+ student and faculty researchers to monitor and analyze a queue of
+            200-400+ concurrent jobs.</li>
+          <li>Accelerated AI/ML research for 200+ students and faculty by racking, deploying, and managing $175K+ in
+            high-performance computing servers equipped with NVIDIA L40S, RTX A5000, and RTX 2080 GPUs on the
+            institute's Slurm HPC Cluster.</li>
+          <li>Strengthened endpoint security and device management by onboarding 10+ conference room PCs into Microsoft
+            Intune, delivering daily updates that prevent up to 98% of malicious attacks, reduce vulnerability exposure,
+            and enforce policy compliance for 100+ monthly users.</li>
+          <li>Reduced print job failures by 40% and improved processing speed by 50% by deploying a RHEL9 CUPS Print
+            Server on VMware for the computer science building, optimizing system performance.</li>
+          <li>Utilized Linux and Windows system administration technologies to manage networks, and provide helpdesk
+            support, enhancing system reliability and reducing downtime across an institute with 80+ faculty, 1,200+
+            computers, and 6,000+ port network.</li>
         </ul>
       </div>
 
@@ -254,13 +429,15 @@
         <div class="card-header">
           <div class="card-header-text">
             <h3 style="font-size: 1.1rem;">Production Warehouse Technician</h3>
-            <p style="color: var(--text-dark); font-weight: 600; margin: -5px 0 5px 0; font-size: 0.9rem;">DALY Computers, Inc.</p>
+            <p style="color: var(--text-dark); font-weight: 600; margin: -5px 0 5px 0; font-size: 0.9rem;">DALY
+              Computers, Inc.</p>
             <span class="role-date" style="font-size: 0.75rem;">Jun 2023 - Jul 2023</span>
           </div>
           <img src="https://www.meec-edu.org/wp-content/uploads/2024/06/DALY2.png" alt="DALY Logo" class="logo-daly">
         </div>
         <ul class="experience-list">
-          <li>Deployed 7,000+ devices by configuring, imaging, testing, asset-tagging, and performing quality audits.</li>
+          <li>Deployed 7,000+ devices by configuring, imaging, testing, asset-tagging, and performing quality audits.
+          </li>
           <li>Ensured compliance with SLAs across 20+ DC-Maryland-Virginia school districts.</li>
         </ul>
       </div>
@@ -269,10 +446,12 @@
         <div class="card-header">
           <div class="card-header-text">
             <h3 style="font-size: 1.1rem;">Modeling Workshop Intern</h3>
-            <p style="color: var(--text-dark); font-weight: 600; margin: -5px 0 5px 0; font-size: 0.9rem;">George Washington University</p>
+            <p style="color: var(--text-dark); font-weight: 600; margin: -5px 0 5px 0; font-size: 0.9rem;">George
+              Washington University</p>
             <span class="role-date" style="font-size: 0.75rem;">Jun 2022 - Jul 2022</span>
           </div>
-          <img src="https://collegeexpertmn.com/wp-content/uploads/2019/05/logo-george-washington.png" alt="GWU Logo" class="logo-gwu">
+          <img src="https://collegeexpertmn.com/wp-content/uploads/2019/05/logo-george-washington.png" alt="GWU Logo"
+            class="logo-gwu">
         </div>
         <ul class="experience-list">
           <li>Designed optimization models using Python, VBA, and Excel to analyze data.</li>
@@ -302,20 +481,27 @@
 
       <div class="card card-full">
         <h3>Automated Databricks Lakehouse Pipeline</h3>
-        <p>A multi-layer programmatic data pipeline built on the Databricks Lakehouse Platform. Engineered a Medallion Architecture (Bronze, Silver, Gold) utilizing PySpark and Delta Lake, with integrated Spark MLlib KMeans clustering to segment data and serve insights via Databricks AI/BI natural language querying.</p>
-        <a href="/lego-pipeline" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View Architecture &rarr;</a>
+        <p>A multi-layer programmatic data pipeline built on the Databricks Lakehouse Platform. Engineered a Medallion
+          Architecture (Bronze, Silver, Gold) utilizing PySpark and Delta Lake, with integrated Spark MLlib KMeans
+          clustering to segment data and serve insights via Databricks AI/BI natural language querying.</p>
+        <a href="/lego-pipeline" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View
+          Architecture &rarr;</a>
       </div>
 
       <div class="card card-half">
         <h3>Terrapin Eats</h3>
-        <p>A high-fidelity Figma prototype of a mobile application designed to tailor local food recommendations to UMD students based on interests and proximity.</p>
-        <a href="/figma" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View Prototype &rarr;</a>
+        <p>A high-fidelity Figma prototype of a mobile application designed to tailor local food recommendations to UMD
+          students based on interests and proximity.</p>
+        <a href="/figma" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View Prototype
+          &rarr;</a>
       </div>
 
       <div class="card card-half">
         <h3>Low-Poly Floral</h3>
-        <p>A high-resolution, geometric vector illustration created by manually mapping and rendering hundreds of polygonal intersections.</p>
-        <a href="/poly-flower" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View Design &rarr;</a>
+        <p>A high-resolution, geometric vector illustration created by manually mapping and rendering hundreds of
+          polygonal intersections.</p>
+        <a href="/poly-flower" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View Design
+          &rarr;</a>
       </div>
 
     </div>
@@ -325,7 +511,8 @@
 </body>
 <script>
   if (window.location.pathname.endsWith("index.html")) {
-      window.history.replaceState(null, "", "/");
-    }
+    window.history.replaceState(null, "", "/");
+  }
 </script>
+
 </html>
