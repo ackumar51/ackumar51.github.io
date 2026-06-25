@@ -261,6 +261,24 @@
       color: var(--primary-color);
     }
 
+    .card-featured {
+      border: 2px solid #FF3621;
+      position: relative;
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #FF3621;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      padding: 6px 14px;
+      border-radius: 14px 0 14px 0;
+    }
+
     .logo-sapns2 {
       width: auto;
       height: 80px;
@@ -326,8 +344,8 @@
   <nav>
     <div class="nav-logo">Ashish Kumar</div>
     <div class="nav-links">
-      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
       <a href="/certifications">Certifications</a>
       <a href="https://github.com/ackumar51" target="_blank">GitHub</a>
     </div>
@@ -351,6 +369,52 @@
   </header>
 
   <main class="section-container">
+
+    <h2 id="projects" class="section-title">Projects</h2>
+    <div class="grid">
+
+      <div class="card card-full card-featured">
+        <span class="featured-badge">Top Submission by Databricks</span>
+        <h3>Automated Databricks Lakehouse Pipeline</h3>
+        <div>
+          <span class="tag primary">Databricks</span>
+          <span class="tag primary">PySpark</span>
+          <span class="tag primary">Delta Lake</span>
+          <span class="tag primary">Spark MLlib</span>
+          <span class="tag primary">AI/BI</span>
+        </div>
+        <p>A multi-layer programmatic data pipeline built on the Databricks Lakehouse Platform. Engineered a Medallion
+          Architecture (Bronze, Silver, Gold) utilizing PySpark and Delta Lake, with integrated Spark MLlib KMeans
+          clustering to segment data and serve insights via Databricks AI/BI natural language querying.</p>
+        <a href="/lego-pipeline" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View
+          Architecture &rarr;</a>
+      </div>
+
+      <div class="card card-half">
+        <h3>Terrapin Eats</h3>
+        <div>
+          <span class="tag primary">Figma</span>
+          <span class="tag primary">UX/UI</span>
+        </div>
+        <p>A high-fidelity Figma prototype of a mobile application designed to tailor local food recommendations to UMD
+          students based on interests and proximity.</p>
+        <a href="/figma" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View Prototype
+          &rarr;</a>
+      </div>
+
+      <div class="card card-half">
+        <h3>Low-Poly Floral</h3>
+        <div>
+          <span class="tag primary">Photoshop</span>
+          <span class="tag primary">Illustrator</span>
+        </div>
+        <p>A high-resolution, geometric vector illustration created by manually mapping and rendering hundreds of
+          polygonal intersections.</p>
+        <a href="/poly-flower" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View Design
+          &rarr;</a>
+      </div>
+
+    </div>
 
     <h2 id="experience" class="section-title">Experience</h2>
     <div class="grid">
@@ -472,51 +536,6 @@
           <li>Acquired proficiency in core computer programming fundamentals.</li>
           <li>Completed intensive coursework focused on enterprise cloud computing and cybersecurity.</li>
         </ul>
-      </div>
-
-    </div>
-
-    <h2 id="projects" class="section-title">Projects</h2>
-    <div class="grid">
-
-      <div class="card card-full">
-        <h3>Automated Databricks Lakehouse Pipeline</h3>
-        <div>
-          <span class="tag primary">Databricks</span>
-          <span class="tag primary">PySpark</span>
-          <span class="tag primary">Delta Lake</span>
-          <span class="tag primary">Spark MLlib</span>
-          <span class="tag primary">AI/BI</span>
-        </div>
-        <p>A multi-layer programmatic data pipeline built on the Databricks Lakehouse Platform. Engineered a Medallion
-          Architecture (Bronze, Silver, Gold) utilizing PySpark and Delta Lake, with integrated Spark MLlib KMeans
-          clustering to segment data and serve insights via Databricks AI/BI natural language querying.</p>
-        <a href="/lego-pipeline" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View
-          Architecture &rarr;</a>
-      </div>
-
-      <div class="card card-half">
-        <h3>Terrapin Eats</h3>
-        <div>
-          <span class="tag primary">Figma</span>
-          <span class="tag primary">UX/UI</span>
-        </div>
-        <p>A high-fidelity Figma prototype of a mobile application designed to tailor local food recommendations to UMD
-          students based on interests and proximity.</p>
-        <a href="/figma" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View Prototype
-          &rarr;</a>
-      </div>
-
-      <div class="card card-half">
-        <h3>Low-Poly Floral</h3>
-        <div>
-          <span class="tag primary">Photoshop</span>
-          <span class="tag primary">Illustrator</span>
-        </div>
-        <p>A high-resolution, geometric vector illustration created by manually mapping and rendering hundreds of
-          polygonal intersections.</p>
-        <a href="/poly-flower" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">View Design
-          &rarr;</a>
       </div>
 
     </div>
